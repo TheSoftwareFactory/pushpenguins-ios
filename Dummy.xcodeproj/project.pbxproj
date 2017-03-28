@@ -262,7 +262,7 @@
 				DEVELOPMENT_TEAM = E6MWZJ9RMW;
 				INFOPLIST_FILE = Dummy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hslc.Dummy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonsgds.Dummy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -275,7 +275,7 @@
 				DEVELOPMENT_TEAM = E6MWZJ9RMW;
 				INFOPLIST_FILE = Dummy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hslc.Dummy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonsgds.Dummy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Dummy
+//  Push
 //
-//  Created by Ramon Goncalves da Silva on 3/24/17.
-//  Copyright © 2017 HSL. All rights reserved.
+//  Created by Software Factory iOS on 3/24/17.
+//  Copyright © 2017 Software Factory. All rights reserved.
 //
 
 import UIKit
@@ -22,10 +22,10 @@ class ViewController: UIViewController {
             var replacement = 0
             
             if (loc?.y)! > self.view.frame.height / 2.0 {
-                replacement = -20
+                replacement = -100
             }
             else{
-                replacement = 20
+                replacement = 100
             }
             
             ball.center = CGPoint(x: ball.center.x, y: ball.center.y + CGFloat(replacement))
@@ -70,8 +70,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 

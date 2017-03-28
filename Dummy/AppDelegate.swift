@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Dummy
 //
-//  Created by Ramon Goncalves da Silva on 3/24/17.
-//  Copyright © 2017 HSL. All rights reserved.
+//  Created by Software Factory iOS on 3/24/17.
+//  Copyright © 2017 Software Factory. All rights reserved.
 //
 
 import UIKit
