@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F6A5C30B1E850D9A001F6CD6 /* Dummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushPenguins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A5C30E1E850D9A001F6CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A5C3101E850D9A001F6CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6A5C3131E850D9A001F6CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		F6A5C3021E850D9A001F6CD6 = {
 			isa = PBXGroup;
 			children = (
-				F6A5C30D1E850D9A001F6CD6 /* Dummy */,
+				F6A5C30D1E850D9A001F6CD6 /* PushPenguins */,
 				F6A5C30C1E850D9A001F6CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		F6A5C30C1E850D9A001F6CD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6A5C30B1E850D9A001F6CD6 /* Dummy.app */,
+				F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6A5C30D1E850D9A001F6CD6 /* Dummy */ = {
+		F6A5C30D1E850D9A001F6CD6 /* PushPenguins */ = {
 			isa = PBXGroup;
 			children = (
 				F6A5C30E1E850D9A001F6CD6 /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				F6A5C3171E850D9A001F6CD6 /* LaunchScreen.storyboard */,
 				F6A5C31A1E850D9A001F6CD6 /* Info.plist */,
 			);
+			name = PushPenguins;
 			path = Dummy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6A5C30A1E850D9A001F6CD6 /* Dummy */ = {
+		F6A5C30A1E850D9A001F6CD6 /* PushPenguins */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6A5C31D1E850D9A001F6CD6 /* Build configuration list for PBXNativeTarget "Dummy" */;
+			buildConfigurationList = F6A5C31D1E850D9A001F6CD6 /* Build configuration list for PBXNativeTarget "PushPenguins" */;
 			buildPhases = (
 				F6A5C3071E850D9A001F6CD6 /* Sources */,
 				F6A5C3081E850D9A001F6CD6 /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = Dummy;
+			name = PushPenguins;
 			productName = Dummy;
-			productReference = F6A5C30B1E850D9A001F6CD6 /* Dummy.app */;
+			productReference = F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "Dummy" */;
+			buildConfigurationList = F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "PushPenguins" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6A5C30A1E850D9A001F6CD6 /* Dummy */,
+				F6A5C30A1E850D9A001F6CD6 /* PushPenguins */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +285,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "Dummy" */ = {
+		F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "PushPenguins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6A5C31B1E850D9A001F6CD6 /* Debug */,
@@ -293,7 +294,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6A5C31D1E850D9A001F6CD6 /* Build configuration list for PBXNativeTarget "Dummy" */ = {
+		F6A5C31D1E850D9A001F6CD6 /* Build configuration list for PBXNativeTarget "PushPenguins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6A5C31E1E850D9A001F6CD6 /* Debug */,

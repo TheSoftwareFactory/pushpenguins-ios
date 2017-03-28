@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Push
+//  PushPenguins
 //
 //  Created by Software Factory iOS on 3/24/17.
 //  Copyright © 2017 Software Factory. All rights reserved.
@@ -30,7 +30,6 @@ class ViewController: UIViewController {
             
             ball.center = CGPoint(x: ball.center.x, y: ball.center.y + CGFloat(replacement))
             
-            
             if ball.frame.minY < 0 || ball.frame.maxY > self.view.frame.height {
                 winLabel = UILabel()
                 winLabel.font = UIFont(name: "HelveticaNeue", size: 50)
@@ -57,7 +56,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -71,7 +69,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
 
 
 /* extension UIView {
@@ -88,6 +85,4 @@ class ViewController: UIViewController {
     func stopRotate() {
         self.layer.removeAnimation(forKey: "rotationAnimation")
     }
-}
-
-*/
+} */
