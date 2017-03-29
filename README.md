@@ -1,3 +1,3 @@
 # Software-Factory-iOS
 
-![image1.PNG](http://imgur.com/a/GK7Hr)
+![Background](https://raw.github.com/TheSoftwareFactory/pushpenguins-ios/master/image1.PNG)
