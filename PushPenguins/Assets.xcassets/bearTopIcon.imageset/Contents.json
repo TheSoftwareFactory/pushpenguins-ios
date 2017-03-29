@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bearBetter.png",
+      "filename" : "bearFinal-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bearFinal.png",
+      "filename" : "bearFinal2x.png",
       "scale" : "2x"
     },
     {
