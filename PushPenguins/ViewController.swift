@@ -14,10 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var rightBall: UIImageView!
     @IBOutlet var centerBall: UIImageView!
 
-    var previousPlayerTop = false
-    var playerTop = false
-    
-    var previousBall : UIImageView!
     var currBall : UIImageView!
  
     var restartGame = false
@@ -61,8 +57,7 @@ class ViewController: UIViewController {
             }
             
             print("AFTER: \(self.currBall.transform)")
-            
-            previousBall = currBall
+    
             
             UIView.animate(withDuration: 0.05, animations: {
                 self.currBall.center = CGPoint(x: self.currBall.center.x, y: self.currBall.center.y + CGFloat(displacement))
@@ -102,7 +97,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         currBall = centerBall
-        previousBall = rightBall
     }
 
     
