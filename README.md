@@ -1,3 +1,3 @@
 # Software-Factory-iOS
 
-![alt tag](pushpenguins-ios/image1.PNG)
+![image1.PNG](pushpenguins-ios/image1.PNG)
