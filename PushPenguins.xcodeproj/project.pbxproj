@@ -55,11 +55,11 @@
 		F6A5C30D1E850D9A001F6CD6 /* PushPenguins */ = {
 			isa = PBXGroup;
 			children = (
-				F67A2F611E8BB580001A398C /* ViewController.swift */,
 				F67A2F5F1E8BB579001A398C /* AppDelegate.swift */,
+				F67A2F611E8BB580001A398C /* ViewController.swift */,
 				F67A2F6A1E8BB5BD001A398C /* Main.storyboard */,
-				F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */,
 				F67A2F631E8BB586001A398C /* Assets.xcassets */,
+				F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */,
 				F67A2F651E8BB58C001A398C /* Info.plist */,
 			);
 			name = PushPenguins;

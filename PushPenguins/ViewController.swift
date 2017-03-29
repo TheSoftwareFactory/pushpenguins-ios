@@ -9,9 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var ball: UIView!
     
+    @IBOutlet var leftBall: UIImageView!
+    @IBOutlet var rightBall: UIImageView!
+    @IBOutlet var centerBall: UIImageView!
+
+    var previousPlayerTop = false
+    var playerTop = false
+    
+    var previousBall : UIImageView!
+    var currBall : UIImageView!
+ 
     var restartGame = false
     var winLabel : UILabel!
     
@@ -19,18 +27,48 @@ class ViewController: UIViewController {
         if restartGame == false {
             let touch = touches.first
             let loc = touch?.location(in: self.view)
-            var replacement = 0
+            var displacement = 0
+            var rotation : CGFloat = 0
+            
+            switch ( (loc?.x)! / self.view.frame.width ) {
+               
+            case 0..<1/3:
+                currBall = leftBall
+            case 1/3..<2/3:
+                currBall = centerBall
+            case 2/3...1.0:
+                currBall = rightBall
+                
+            default:
+                print(self.view.frame.width / (loc?.x)!)
+                currBall = centerBall
+            }
+            
+            print("BEFORE: \(self.currBall.transform)")
             
             if (loc?.y)! > self.view.frame.height / 2.0 {
-                replacement = -100
+                displacement = -70
+               
+                if self.currBall.transform != CGAffineTransform(rotationAngle: 0) {
+                    self.currBall.transform = self.currBall.transform.rotated(by: CGFloat(M_PI))
+                }
             }
             else{
-                replacement = 100
+                displacement = 70
+                if self.currBall.transform == CGAffineTransform(rotationAngle: 0) {
+                   self.currBall.transform = self.currBall.transform.rotated(by: -CGFloat(M_PI))
+                }
             }
             
-            ball.center = CGPoint(x: ball.center.x, y: ball.center.y + CGFloat(replacement))
+            print("AFTER: \(self.currBall.transform)")
             
-            if ball.frame.minY < 0 || ball.frame.maxY > self.view.frame.height {
+            previousBall = currBall
+            
+            UIView.animate(withDuration: 0.05, animations: {
+                self.currBall.center = CGPoint(x: self.currBall.center.x, y: self.currBall.center.y + CGFloat(displacement))
+            }, completion: nil)
+            
+            if currBall.frame.minY < 0 || currBall.frame.maxY > self.view.frame.height {
                 winLabel = UILabel()
                 winLabel.font = UIFont(name: "HelveticaNeue", size: 50)
                 winLabel.textAlignment = .center
@@ -39,8 +77,8 @@ class ViewController: UIViewController {
                 winLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
                 self.view.addSubview(winLabel)
                 restartGame = true
-                ball.alpha = 0
-                if ball.frame.minY < 0 {
+                currBall.alpha = 0
+                if currBall.frame.minY < 0 {
                     winLabel.text = "Player 1 won!"
                 }
                 else{
@@ -50,8 +88,12 @@ class ViewController: UIViewController {
         }
         else{
             restartGame = false
-            ball.alpha = 1
-            ball.center = self.view.center
+            leftBall.alpha = 1
+            leftBall.center = CGPoint(x: leftBall.center.x, y: self.view.center.y)
+            centerBall.alpha = 1
+            centerBall.center =  CGPoint(x: centerBall.center.x, y: self.view.center.y)
+            rightBall.alpha = 1
+            rightBall.center =  CGPoint(x: rightBall.center.x, y: self.view.center.y)
             winLabel.removeFromSuperview()
         }
     }
@@ -59,11 +101,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        ball.layer.cornerRadius = ball.frame.width / 2.0
+        currBall = centerBall
+        previousBall = rightBall
     }
 
+    
+    override func viewDidLayoutSubviews() {
+       
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
