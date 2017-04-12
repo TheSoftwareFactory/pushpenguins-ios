@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet var leftBall: UIImageView!
     @IBOutlet var rightBall: UIImageView!
     @IBOutlet var centerBall: UIImageView!
-
+    
     var currBall : UIImageView!
- 
+    
     var restartGame = false
     var winLabel : UILabel!
     
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             var displacement = 0
             var rotation : CGFloat = 0
             
-            switch ( (loc?.x)! / self.view.frame.width ) {
+            switch ( (loc?.x)! / self.view.frame.width ) { //Sets ball to be one of the three options based on x touch location
                
             case 0..<1/3:
                 currBall = leftBall
@@ -44,20 +44,18 @@ class ViewController: UIViewController {
             
             if (loc?.y)! > self.view.frame.height / 2.0 {
                 displacement = -70
-               
-                if self.currBall.transform != CGAffineTransform(rotationAngle: 0) {
+                if self.currBall.transform != CGAffineTransform(rotationAngle: 0) { //rotate penguin image if on opposite direction
                     self.currBall.transform = self.currBall.transform.rotated(by: CGFloat(M_PI))
                 }
             }
             else{
                 displacement = 70
-                if self.currBall.transform == CGAffineTransform(rotationAngle: 0) {
+                if self.currBall.transform == CGAffineTransform(rotationAngle: 0) { //rotate penguin image if on opposite direction
                    self.currBall.transform = self.currBall.transform.rotated(by: -CGFloat(M_PI))
                 }
             }
             
             print("AFTER: \(self.currBall.transform)")
-    
             
             UIView.animate(withDuration: 0.05, animations: {
                 self.currBall.center = CGPoint(x: self.currBall.center.x, y: self.currBall.center.y + CGFloat(displacement))
@@ -86,9 +84,9 @@ class ViewController: UIViewController {
             leftBall.alpha = 1
             leftBall.center = CGPoint(x: leftBall.center.x, y: self.view.center.y)
             centerBall.alpha = 1
-            centerBall.center =  CGPoint(x: centerBall.center.x, y: self.view.center.y)
+            centerBall.center = CGPoint(x: centerBall.center.x, y: self.view.center.y)
             rightBall.alpha = 1
-            rightBall.center =  CGPoint(x: rightBall.center.x, y: self.view.center.y)
+            rightBall.center = CGPoint(x: rightBall.center.x, y: self.view.center.y)
             winLabel.removeFromSuperview()
         }
     }
@@ -98,7 +96,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         currBall = centerBall
     }
-
     
     override func viewDidLayoutSubviews() {
        
@@ -108,7 +105,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
 
 /* extension UIView {
     func startRotate() {

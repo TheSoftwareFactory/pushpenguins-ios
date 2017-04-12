@@ -13,7 +13,18 @@
 		F67A2F661E8BB58C001A398C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F651E8BB58C001A398C /* Info.plist */; };
 		F67A2F691E8BB5B8001A398C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */; };
 		F67A2F6C1E8BB5BD001A398C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F6A1E8BB5BD001A398C /* Main.storyboard */; };
+		F6A161811E9E4DA900090D32 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A161751E9E4BF800090D32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A5C3031E850D9A001F6CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A5C30A1E850D9A001F6CD6;
+			remoteInfo = PushPenguins;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F67A2F5F1E8BB579001A398C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PushPenguins/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -22,10 +33,20 @@
 		F67A2F651E8BB58C001A398C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PushPenguins/Info.plist; sourceTree = SOURCE_ROOT; };
 		F67A2F681E8BB5B8001A398C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PushPenguins/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		F67A2F6B1E8BB5BD001A398C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PushPenguins/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		F6A161701E9E4BF800090D32 /* PushPenguinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushPenguinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A161741E9E4BF800090D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushPenguins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F6A1616D1E9E4BF800090D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A5C3081E850D9A001F6CD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +57,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6A161711E9E4BF800090D32 /* PushPenguinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1617A1E9E4C3A00090D32 /* Cases */,
+				F6A1617B1E9E4C4100090D32 /* Data */,
+				F6A1617D1E9E4C8400090D32 /* Supporting Files */,
+			);
+			path = PushPenguinsTests;
+			sourceTree = "<group>";
+		};
+		F6A1617A1E9E4C3A00090D32 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		F6A1617B1E9E4C4100090D32 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F6A1617D1E9E4C8400090D32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A161741E9E4BF800090D32 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F6A5C3021E850D9A001F6CD6 = {
 			isa = PBXGroup;
 			children = (
 				F6A5C30D1E850D9A001F6CD6 /* PushPenguins */,
+				F6A161711E9E4BF800090D32 /* PushPenguinsTests */,
 				F6A5C30C1E850D9A001F6CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */,
+				F6A161701E9E4BF800090D32 /* PushPenguinsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +125,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F6A1616F1E9E4BF800090D32 /* PushPenguinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A161791E9E4BF800090D32 /* Build configuration list for PBXNativeTarget "PushPenguinsTests" */;
+			buildPhases = (
+				F6A1616C1E9E4BF800090D32 /* Sources */,
+				F6A1616D1E9E4BF800090D32 /* Frameworks */,
+				F6A1616E1E9E4BF800090D32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A161761E9E4BF800090D32 /* PBXTargetDependency */,
+			);
+			name = PushPenguinsTests;
+			productName = PushPenguinsTests;
+			productReference = F6A161701E9E4BF800090D32 /* PushPenguinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F6A5C30A1E850D9A001F6CD6 /* PushPenguins */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A5C31D1E850D9A001F6CD6 /* Build configuration list for PBXNativeTarget "PushPenguins" */;
@@ -92,10 +166,16 @@
 		F6A5C3031E850D9A001F6CD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HSL;
 				TargetAttributes = {
+					F6A1616F1E9E4BF800090D32 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F6A5C30A1E850D9A001F6CD6;
+					};
 					F6A5C30A1E850D9A001F6CD6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = E6MWZJ9RMW;
@@ -117,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				F6A5C30A1E850D9A001F6CD6 /* PushPenguins */,
+				F6A1616F1E9E4BF800090D32 /* PushPenguinsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F6A1616E1E9E4BF800090D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A5C3091E850D9A001F6CD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +224,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F6A1616C1E9E4BF800090D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A161811E9E4DA900090D32 /* ViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A5C3071E850D9A001F6CD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +242,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A161761E9E4BF800090D32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A5C30A1E850D9A001F6CD6 /* PushPenguins */;
+			targetProxy = F6A161751E9E4BF800090D32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */ = {
@@ -167,6 +271,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F6A161771E9E4BF800090D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = PushPenguinsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hslc.PushPenguinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushPenguins.app/PushPenguins";
+			};
+			name = Debug;
+		};
+		F6A161781E9E4BF800090D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = PushPenguinsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hslc.PushPenguinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushPenguins.app/PushPenguins";
+			};
+			name = Release;
+		};
 		F6A5C31B1E850D9A001F6CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +424,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F6A161791E9E4BF800090D32 /* Build configuration list for PBXNativeTarget "PushPenguinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A161771E9E4BF800090D32 /* Debug */,
+				F6A161781E9E4BF800090D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "PushPenguins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
