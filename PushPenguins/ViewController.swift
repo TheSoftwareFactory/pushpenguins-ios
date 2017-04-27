@@ -25,6 +25,7 @@ class ViewController: UIViewController {
             let loc = touch?.location(in: self.view)
             var displacement = 0
             var rotation : CGFloat = 0
+            //testing comment
             
             switch ( (loc?.x)! / self.view.frame.width ) { //Sets ball to be one of the three options based on x touch location
                
