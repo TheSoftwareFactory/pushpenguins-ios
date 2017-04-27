@@ -14,10 +14,18 @@
 		F67A2F691E8BB5B8001A398C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */; };
 		F67A2F6C1E8BB5BD001A398C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F6A1E8BB5BD001A398C /* Main.storyboard */; };
 		F6A161811E9E4DA900090D32 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */; };
+		F6B0E1CE1EB1DAAD00068F6A /* PushPenguinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B0E1CD1EB1DAAD00068F6A /* PushPenguinsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F6A161751E9E4BF800090D32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A5C3031E850D9A001F6CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A5C30A1E850D9A001F6CD6;
+			remoteInfo = PushPenguins;
+		};
+		F6B0E1D01EB1DAAD00068F6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F6A5C3031E850D9A001F6CD6 /* Project object */;
 			proxyType = 1;
@@ -37,6 +45,9 @@
 		F6A161741E9E4BF800090D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushPenguins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B0E1CB1EB1DAAD00068F6A /* PushPenguinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushPenguinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B0E1CD1EB1DAAD00068F6A /* PushPenguinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPenguinsUITests.swift; sourceTree = "<group>"; };
+		F6B0E1CF1EB1DAAD00068F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +59,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F6A5C3081E850D9A001F6CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B0E1C81EB1DAAD00068F6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,6 +113,7 @@
 			children = (
 				F6A5C30D1E850D9A001F6CD6 /* PushPenguins */,
 				F6A161711E9E4BF800090D32 /* PushPenguinsTests */,
+				F6B0E1CC1EB1DAAD00068F6A /* PushPenguinsUITests */,
 				F6A5C30C1E850D9A001F6CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +123,7 @@
 			children = (
 				F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */,
 				F6A161701E9E4BF800090D32 /* PushPenguinsTests.xctest */,
+				F6B0E1CB1EB1DAAD00068F6A /* PushPenguinsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +140,15 @@
 			);
 			name = PushPenguins;
 			path = Dummy;
+			sourceTree = "<group>";
+		};
+		F6B0E1CC1EB1DAAD00068F6A /* PushPenguinsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0E1CD1EB1DAAD00068F6A /* PushPenguinsUITests.swift */,
+				F6B0E1CF1EB1DAAD00068F6A /* Info.plist */,
+			);
+			path = PushPenguinsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +189,24 @@
 			productReference = F6A5C30B1E850D9A001F6CD6 /* PushPenguins.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F6B0E1CA1EB1DAAD00068F6A /* PushPenguinsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B0E1D41EB1DAAD00068F6A /* Build configuration list for PBXNativeTarget "PushPenguinsUITests" */;
+			buildPhases = (
+				F6B0E1C71EB1DAAD00068F6A /* Sources */,
+				F6B0E1C81EB1DAAD00068F6A /* Frameworks */,
+				F6B0E1C91EB1DAAD00068F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6B0E1D11EB1DAAD00068F6A /* PBXTargetDependency */,
+			);
+			name = PushPenguinsUITests;
+			productName = PushPenguinsUITests;
+			productReference = F6B0E1CB1EB1DAAD00068F6A /* PushPenguinsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +228,11 @@
 						DevelopmentTeam = E6MWZJ9RMW;
 						ProvisioningStyle = Automatic;
 					};
+					F6B0E1CA1EB1DAAD00068F6A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F6A5C30A1E850D9A001F6CD6;
+					};
 				};
 			};
 			buildConfigurationList = F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "PushPenguins" */;
@@ -198,6 +250,7 @@
 			targets = (
 				F6A5C30A1E850D9A001F6CD6 /* PushPenguins */,
 				F6A1616F1E9E4BF800090D32 /* PushPenguinsTests */,
+				F6B0E1CA1EB1DAAD00068F6A /* PushPenguinsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +274,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6B0E1C91EB1DAAD00068F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -241,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6B0E1C71EB1DAAD00068F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B0E1CE1EB1DAAD00068F6A /* PushPenguinsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -248,6 +316,11 @@
 			isa = PBXTargetDependency;
 			target = F6A5C30A1E850D9A001F6CD6 /* PushPenguins */;
 			targetProxy = F6A161751E9E4BF800090D32 /* PBXContainerItemProxy */;
+		};
+		F6B0E1D11EB1DAAD00068F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A5C30A1E850D9A001F6CD6 /* PushPenguins */;
+			targetProxy = F6B0E1D01EB1DAAD00068F6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +494,34 @@
 			};
 			name = Release;
 		};
+		F6B0E1D21EB1DAAD00068F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PushPenguinsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.PushPenguinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PushPenguins;
+			};
+			name = Debug;
+		};
+		F6B0E1D31EB1DAAD00068F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PushPenguinsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.PushPenguinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PushPenguins;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +532,7 @@
 				F6A161781E9E4BF800090D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6A5C3061E850D9A001F6CD6 /* Build configuration list for PBXProject "PushPenguins" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +551,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F6B0E1D41EB1DAAD00068F6A /* Build configuration list for PBXNativeTarget "PushPenguinsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B0E1D21EB1DAAD00068F6A /* Debug */,
+				F6B0E1D31EB1DAAD00068F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

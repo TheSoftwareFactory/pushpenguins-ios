@@ -38,6 +38,16 @@
                ReferencedContainer = "container:PushPenguins.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F6B0E1CA1EB1DAAD00068F6A"
+               BuildableName = "PushPenguinsUITests.xctest"
+               BlueprintName = "PushPenguinsUITests"
+               ReferencedContainer = "container:PushPenguins.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

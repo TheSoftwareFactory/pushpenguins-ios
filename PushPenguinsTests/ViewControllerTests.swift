@@ -17,6 +17,11 @@ class ViewControllerTests: XCTestCase {
         super.setUp()
         controller = ViewController()
     }
+    
+    func testMovement(){
+            controller.leftBall.
+    }
+    
     func testControllerHasExpectedPenguinsCount(){
        
         XCTAssertTrue(controller.restartGame == false)
