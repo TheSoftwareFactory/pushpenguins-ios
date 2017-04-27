@@ -20,6 +20,13 @@ class ViewControllerTests: XCTestCase {
         controller = storyboard.instantiateInitialViewController() as! ViewController
     }
     //testing thing
+    //testing two/
+    //testing again
+    
+    func testNewThing(){
+        
+    }
+    
     func testInitialState() {
 
         XCTAssertTrue(controller.restartGame == false)
