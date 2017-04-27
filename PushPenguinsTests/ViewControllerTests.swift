@@ -15,17 +15,50 @@ class ViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        controller = ViewController()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        controller = storyboard.instantiateInitialViewController() as! ViewController
     }
     
+<<<<<<< HEAD
     func testMovement(){
             controller.leftBall.
     }
     
     func testControllerHasExpectedPenguinsCount(){
        
+=======
+    
+    func testInitialState() {
+>>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
         XCTAssertTrue(controller.restartGame == false)
-        
-        XCTAssertTrue(controller.currBall.image == UIImage(named: "penguinIcon"))
     }
+    
+    /*
+    func testControllerHasExpectedPenguinsCount(){
+        //Assert that game has started
+        XCTAssertNil(controller.currBall)
+        //XCTAssertNotNil(controller.currBall)
+        
+        //controller.currBall.image is nil, because
+        
+        //XCTAssertTrue(controller.currBall.image == UIImage(named: "penguinIcon"))
+    }
+    
+    func testPenguinMoves() {
+    
+    }
+    
+    func testPenguinsStartAtMiddle() {
+        
+    }
+    
+    func testWinnerOne() {
+    
+    }
+    
+    func testWinnerTwo() {
+    
+    }
+    */
 }

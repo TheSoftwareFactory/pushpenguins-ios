@@ -4,14 +4,34 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Dummy.xcscheme</key>
+		<key>PushPenguins.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PushPenguinsTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>86DCBA271EB0D5FF00D21F24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86DCBA351EB0D88400D21F24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6A1616F1E9E4BF800090D32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F6A5C30A1E850D9A001F6CD6</key>
 		<dict>
 			<key>primary</key>

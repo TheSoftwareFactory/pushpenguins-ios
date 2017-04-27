@@ -2,7 +2,11 @@
 //  PushPenguinsUITests.swift
 //  PushPenguinsUITests
 //
+<<<<<<< HEAD
 //  Created by Ramon Goncalves da Silva on 4/27/17.
+=======
+//  Created by riena on 26/04/2017.
+>>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
 //  Copyright © 2017 HSL. All rights reserved.
 //
 
@@ -27,7 +31,7 @@ class PushPenguinsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testPenguinMove() {
         let penguin = XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element
         penguin.tap()
@@ -35,5 +39,4 @@ class PushPenguinsUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
 }

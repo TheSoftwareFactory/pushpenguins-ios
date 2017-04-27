@@ -10,7 +10,6 @@
 		F67A2F601E8BB579001A398C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67A2F5F1E8BB579001A398C /* AppDelegate.swift */; };
 		F67A2F621E8BB580001A398C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67A2F611E8BB580001A398C /* ViewController.swift */; };
 		F67A2F641E8BB586001A398C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F631E8BB586001A398C /* Assets.xcassets */; };
-		F67A2F661E8BB58C001A398C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F651E8BB58C001A398C /* Info.plist */; };
 		F67A2F691E8BB5B8001A398C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F671E8BB5B8001A398C /* LaunchScreen.storyboard */; };
 		F67A2F6C1E8BB5BD001A398C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67A2F6A1E8BB5BD001A398C /* Main.storyboard */; };
 		F6A161811E9E4DA900090D32 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A161801E9E4DA900090D32 /* ViewControllerTests.swift */; };
@@ -35,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86DCBA2A1EB0D60000D21F24 /* PushPenguinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPenguinsUITests.swift; sourceTree = "<group>"; };
+		86DCBA2C1EB0D60000D21F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DCBA381EB0D88400D21F24 /* PushPenguinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPenguinsUITests.swift; sourceTree = "<group>"; };
+		86DCBA3A1EB0D88400D21F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67A2F5F1E8BB579001A398C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PushPenguins/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		F67A2F611E8BB580001A398C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PushPenguins/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		F67A2F631E8BB586001A398C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PushPenguins/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -75,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86DCBA291EB0D60000D21F24 /* PushPenguinsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86DCBA2A1EB0D60000D21F24 /* PushPenguinsUITests.swift */,
+				86DCBA2C1EB0D60000D21F24 /* Info.plist */,
+			);
+			path = PushPenguinsUITests;
+			sourceTree = "<group>";
+		};
+		86DCBA371EB0D88400D21F24 /* PushPenguinsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86DCBA381EB0D88400D21F24 /* PushPenguinsUITests.swift */,
+				86DCBA3A1EB0D88400D21F24 /* Info.plist */,
+			);
+			path = PushPenguinsUITests;
+			sourceTree = "<group>";
+		};
 		F6A161711E9E4BF800090D32 /* PushPenguinsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +134,12 @@
 			children = (
 				F6A5C30D1E850D9A001F6CD6 /* PushPenguins */,
 				F6A161711E9E4BF800090D32 /* PushPenguinsTests */,
+<<<<<<< HEAD
 				F6B0E1CC1EB1DAAD00068F6A /* PushPenguinsUITests */,
+=======
+				86DCBA291EB0D60000D21F24 /* PushPenguinsUITests */,
+				86DCBA371EB0D88400D21F24 /* PushPenguinsUITests */,
+>>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
 				F6A5C30C1E850D9A001F6CD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,7 +239,7 @@
 		F6A5C3031E850D9A001F6CD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HSL;
 				TargetAttributes = {
@@ -268,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67A2F691E8BB5B8001A398C /* LaunchScreen.storyboard in Resources */,
-				F67A2F661E8BB58C001A398C /* Info.plist in Resources */,
 				F67A2F641E8BB586001A398C /* Assets.xcassets in Resources */,
 				F67A2F6C1E8BB5BD001A398C /* Main.storyboard in Resources */,
 			);
