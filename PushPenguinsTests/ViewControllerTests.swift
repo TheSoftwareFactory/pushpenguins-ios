@@ -20,17 +20,8 @@ class ViewControllerTests: XCTestCase {
         controller = storyboard.instantiateInitialViewController() as! ViewController
     }
     
-<<<<<<< HEAD
-    func testMovement(){
-            controller.leftBall.
-    }
-    
-    func testControllerHasExpectedPenguinsCount(){
-       
-=======
-    
     func testInitialState() {
->>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
+
         XCTAssertTrue(controller.restartGame == false)
     }
     
