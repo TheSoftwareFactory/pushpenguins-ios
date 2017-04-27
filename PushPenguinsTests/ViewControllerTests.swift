@@ -19,9 +19,6 @@ class ViewControllerTests: XCTestCase {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         controller = storyboard.instantiateInitialViewController() as! ViewController
     }
-    //testing thing
-    //testing two/
-    //testing again
     
     func testNewThing(){
         
