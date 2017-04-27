@@ -25,21 +25,17 @@ class ViewControllerTests: XCTestCase {
         XCTAssertTrue(controller.restartGame == false)
     }
     
-    
+    /*
     func testControllerHasExpectedPenguinsCount(){
         //Assert that game has started
-        
-        
         XCTAssertNil(controller.currBall)
-        
-        
         //XCTAssertNotNil(controller.currBall)
         
         //controller.currBall.image is nil, because
         
         //XCTAssertTrue(controller.currBall.image == UIImage(named: "penguinIcon"))
     }
-    /*
+    
     func testPenguinMoves() {
     
     }
