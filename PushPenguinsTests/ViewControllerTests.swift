@@ -23,6 +23,7 @@ class ViewControllerTests: XCTestCase {
     func testNewThing(){
         //testing new
         //testing newest
+        //teksting again
     }
     
     func testInitialState() {
