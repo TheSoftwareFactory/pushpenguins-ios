@@ -134,12 +134,12 @@
 			children = (
 				F6A5C30D1E850D9A001F6CD6 /* PushPenguins */,
 				F6A161711E9E4BF800090D32 /* PushPenguinsTests */,
-<<<<<<< HEAD
+
 				F6B0E1CC1EB1DAAD00068F6A /* PushPenguinsUITests */,
-=======
+
 				86DCBA291EB0D60000D21F24 /* PushPenguinsUITests */,
 				86DCBA371EB0D88400D21F24 /* PushPenguinsUITests */,
->>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
+
 				F6A5C30C1E850D9A001F6CD6 /* Products */,
 			);
 			sourceTree = "<group>";

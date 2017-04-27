@@ -2,12 +2,8 @@
 //  PushPenguinsUITests.swift
 //  PushPenguinsUITests
 //
-<<<<<<< HEAD
-//  Created by Ramon Goncalves da Silva on 4/27/17.
-=======
-//  Created by riena on 26/04/2017.
->>>>>>> 1f9cd2d147ed18e72c3ba387d6e8d45890af5826
-//  Copyright © 2017 HSL. All rights reserved.
+// Created by Software Factory 27/04/2017
+// Copyright © 2017 HSL. All rights reserved.
 //
 
 import XCTest
