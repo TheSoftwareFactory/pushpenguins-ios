@@ -20,11 +20,6 @@ class ViewControllerTests: XCTestCase {
         controller = storyboard.instantiateInitialViewController() as! ViewController
     }
     
-    func testNewThing(){
-        //testing new
-        //testing newest
-        //teksting again
-    }
     
     func testInitialState() {
 
