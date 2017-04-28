@@ -83,10 +83,13 @@ class ViewController: UIViewController {
             restartGame = false
             leftBall.alpha = 1
             leftBall.center = CGPoint(x: leftBall.center.x, y: self.view.center.y)
+            leftBall.transform = CGAffineTransform()
             centerBall.alpha = 1
             centerBall.center = CGPoint(x: centerBall.center.x, y: self.view.center.y)
+            centerBall.transform = CGAffineTransform()
             rightBall.alpha = 1
             rightBall.center = CGPoint(x: rightBall.center.x, y: self.view.center.y)
+            rightBall.transform = CGAffineTransform()
             winLabel.removeFromSuperview()
         }
     }
