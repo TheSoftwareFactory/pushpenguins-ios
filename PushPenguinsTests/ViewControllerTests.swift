@@ -21,9 +21,9 @@ class ViewControllerTests: XCTestCase {
     }
     
     
-    func testInitialState() {
+    func testFailure() {
 
-        XCTAssertTrue(controller.restartGame == false)
+        XCTAssertEqual(1,2)
     }
     
     /*
