@@ -42,6 +42,9 @@ class PushPenguinsUITests: XCTestCase {
                 xTouch -= UInt32(1.0)
             }
             var yTouch = arc4random_uniform(UInt32(height / 2.0)) + UInt32(height / 2.0)
+            if CGFloat(yTouch) == height / 2.0 {
+                yTouch += UInt32(1.0)
+            }
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -58,13 +61,15 @@ class PushPenguinsUITests: XCTestCase {
         XCTAssertFalse(app.staticTexts["Player 1 won!"].exists)
         let normalized = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
         
-        
         for _ in 0...4 { //simulate multiple touches on different locations on the same region
             var xTouch = arc4random_uniform(UInt32(width / 3.0)) + UInt32(width * CGFloat(1.0/3.0))
             if CGFloat(xTouch) == width * 2.0 / 3.0 {
                 xTouch -= UInt32(1.0)
             }
-            let yTouch = arc4random_uniform(UInt32(height / 2.0)) + UInt32(height / 2.0)
+            var yTouch = arc4random_uniform(UInt32(height / 2.0)) + UInt32(height / 2.0)
+            if CGFloat(yTouch) == height / 2.0 {
+                yTouch += UInt32(1.0)
+            }
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -81,10 +86,12 @@ class PushPenguinsUITests: XCTestCase {
         XCTAssertFalse(app.staticTexts["Player 1 won!"].exists)
         let normalized = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
         
-        
         for _ in 0...4 { //simulate multiple touches on different locations on the same region
             let xTouch = arc4random_uniform(UInt32(width / 3.0)) +  UInt32(width * CGFloat(2.0/3.0))
-            let yTouch = arc4random_uniform(UInt32(height / 2.0)) + UInt32(height / 2.0)
+            var yTouch = arc4random_uniform(UInt32(height / 2.0)) + UInt32(height / 2.0)
+            if CGFloat(yTouch) == height / 2.0 {
+                yTouch += UInt32(1.0)
+            }
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -106,10 +113,7 @@ class PushPenguinsUITests: XCTestCase {
             if CGFloat(xTouch) == width / 3.0 {
                 xTouch -= UInt32(1.0)
             }
-            var yTouch = arc4random_uniform(UInt32(height / 2.0))
-            if CGFloat(yTouch) == height / 2.0 {
-                yTouch -= UInt32(1.0)
-            }
+            let yTouch = arc4random_uniform(UInt32(height / 2.0))
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -131,10 +135,7 @@ class PushPenguinsUITests: XCTestCase {
             if CGFloat(xTouch) == width * 2.0 / 3.0 {
                 xTouch -= UInt32(1.0)
             }
-            var yTouch = arc4random_uniform(UInt32(height / 2.0))
-            if CGFloat(yTouch) == height / 2.0 {
-                yTouch -= UInt32(1.0)
-            }
+            let yTouch = arc4random_uniform(UInt32(height / 2.0))
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -153,10 +154,7 @@ class PushPenguinsUITests: XCTestCase {
         
         for _ in 0...4 { //simulate multiple touches on different locations on the same region
             let xTouch = arc4random_uniform(UInt32(width / 3.0)) + UInt32(width * CGFloat(2.0/3.0))
-            var yTouch = arc4random_uniform(UInt32(height / 2.0))
-            if CGFloat(yTouch) == height / 2.0 {
-                yTouch -= UInt32(1.0)
-            }
+            let yTouch = arc4random_uniform(UInt32(height / 2.0))
             let coordinate = normalized.withOffset(CGVector(dx: CGFloat(xTouch), dy: CGFloat(yTouch)))
             coordinate.tap()
         }
@@ -165,5 +163,4 @@ class PushPenguinsUITests: XCTestCase {
         app.staticTexts["Player 2 won!"].tap()
         XCTAssertFalse(app.staticTexts["Player 2 won!"].exists)
     }
-
 }
