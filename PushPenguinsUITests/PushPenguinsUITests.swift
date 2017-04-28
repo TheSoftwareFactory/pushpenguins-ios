@@ -163,8 +163,4 @@ class PushPenguinsUITests: XCTestCase {
         app.staticTexts["Player 2 won!"].tap()
         XCTAssertFalse(app.staticTexts["Player 2 won!"].exists)
     }
-    
-    func testPenguinInitialPosition(){
-        
-    }
 }

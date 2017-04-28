@@ -17,13 +17,13 @@ class ViewControllerTests: XCTestCase {
         super.setUp()
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        controller = storyboard.instantiateInitialViewController() as! ViewController
+        storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        //controller = storyboard.instantiateInitialViewController() as! ViewController
     }
     
-    
-    func testInitialState() {
-
-        XCTAssertTrue(controller.restartGame == false)
+    override func tearDown() {
+        controller = nil
+        super.tearDown()
     }
     
     /*
