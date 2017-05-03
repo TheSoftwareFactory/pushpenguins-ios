@@ -45,13 +45,13 @@ class ViewController: UIViewController {
             if (loc?.y)! > self.view.frame.height / 2.0 {
                 displacement = -70
                 if self.currBall.transform != CGAffineTransform(rotationAngle: 0) { //rotate penguin image if on opposite direction
-                    self.currBall.transform = self.currBall.transform.rotated(by: CGFloat(M_PI))
+                    self.currBall.transform = self.currBall.transform.rotated(by: CGFloat(Double.pi))
                 }
             }
             else{
                 displacement = 70
                 if self.currBall.transform == CGAffineTransform(rotationAngle: 0) { //rotate penguin image if on opposite direction
-                   self.currBall.transform = self.currBall.transform.rotated(by: -CGFloat(M_PI))
+                   self.currBall.transform = self.currBall.transform.rotated(by: -CGFloat(Double.pi))
                 }
             }
             
