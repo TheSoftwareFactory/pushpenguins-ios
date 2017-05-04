@@ -1,5 +1,5 @@
 # Software-Factory-iOS
 
-This is the test project for Jenkins. It's a fun game for two players. ☆ミミ
+This is the test project for Jenkins. It's a fun game for two players. ☆ミ
 
 ![Background](https://raw.github.com/TheSoftwareFactory/pushpenguins-ios/master/image1.PNG)
