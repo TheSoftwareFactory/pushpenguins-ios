@@ -25,32 +25,4 @@ class ViewControllerTests: XCTestCase {
         controller = nil
         super.tearDown()
     }
-    
-    /*
-    func testControllerHasExpectedPenguinsCount(){
-        //Assert that game has started
-        XCTAssertNil(controller.currBall)
-        //XCTAssertNotNil(controller.currBall)
-        
-        //controller.currBall.image is nil, because
-        
-        //XCTAssertTrue(controller.currBall.image == UIImage(named: "penguinIcon"))
-    }
-    
-    func testPenguinMoves() {
-    
-    }
-    
-    func testPenguinsStartAtMiddle() {
-        
-    }
-    
-    func testWinnerOne() {
-    
-    }
-    
-    func testWinnerTwo() {
-    
-    }
-    */
 }

@@ -4,10 +4,7 @@
 //
 //  Created by Software Factory iOS on 3/24/17.
 //  Copyright © 2017 Software Factory. All rights reserved.
-// comments
-// testing
-//testing 2a
-//
+
 
 import UIKit
 
@@ -29,20 +26,16 @@ class ViewController: UIViewController {
             var displacement = 0
             
             switch ( (loc?.x)! / self.view.frame.width ) { //Sets ball to be one of the three options based on x touch location
-               
             case 0..<1/3:
                 currBall = leftBall
             case 1/3..<2/3:
                 currBall = centerBall
             case 2/3...1.0:
                 currBall = rightBall
-                
             default:
                 print(self.view.frame.width / (loc?.x)!)
                 currBall = centerBall
             }
-            
-            print("BEFORE: \(self.currBall.transform)")
             
             if (loc?.y)! > self.view.frame.height / 2.0 {
                 displacement = -70
@@ -56,8 +49,6 @@ class ViewController: UIViewController {
                    self.currBall.transform = self.currBall.transform.rotated(by: -CGFloat(Double.pi))
                 }
             }
-            
-            print("AFTER: \(self.currBall.transform)")
             
             UIView.animate(withDuration: 0.05, animations: {
                 self.currBall.center = CGPoint(x: self.currBall.center.x, y: self.currBall.center.y + CGFloat(displacement))
