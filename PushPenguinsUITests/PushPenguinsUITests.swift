@@ -142,6 +142,7 @@ class PushPenguinsUITests: XCTestCase {
         XCTAssertFalse(app.staticTexts["Player 2 won!"].exists)
     }
     
+    //Fail this test for Pull Request
     func testRightBallPlayer2Win(){
         let app = XCUIApplication()
         let width = app.windows.element(boundBy: 0).frame.size.width
@@ -156,7 +157,7 @@ class PushPenguinsUITests: XCTestCase {
             coordinate.tap()
         }
         
-        XCTAssertTrue(app.staticTexts["Player 2 won!"].exists)
+        XCTAssertTrue(app.staticTexts["Player 1 won!"].exists)
         app.staticTexts["Player 2 won!"].tap()
         XCTAssertFalse(app.staticTexts["Player 2 won!"].exists)
     }
