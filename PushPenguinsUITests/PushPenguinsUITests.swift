@@ -95,7 +95,7 @@ class PushPenguinsUITests: XCTestCase {
         
         XCTAssertTrue(app.staticTexts["Player 1 won!"].exists)
         app.staticTexts["Player 1 won!"].tap()
-        XCTAssertTrue(app.staticTexts["Player 1 won!"].exists)
+        XCTAssertFalse(app.staticTexts["Player 1 won!"].exists)
     }
     
     func testLeftBallPlayer2Win(){
